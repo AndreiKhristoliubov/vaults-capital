@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe — Vaults Capital</title>
+  <meta name="description" content="Subscribe to Vaults Capital. Free weekly newsletter or premium full research access." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FBFAF6'/%3E%3Crect x='12' y='12' width='8' height='8' fill='%231B3A5F'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .faq { margin-top: 4rem; }
+    .faq-item {
+      border-top: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    .faq-item:last-child { border-bottom: 1px solid var(--border); }
+    .faq-item h3 {
+      font-family: var(--font-sans);
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+    .faq-item p {
+      color: var(--ink-muted);
+      line-height: 1.65;
+      font-size: 0.96rem;
+    }
+    .institutional {
+      margin-top: 4rem;
+      padding: 2.5rem;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+    }
+    .institutional h3 {
+      font-family: var(--font-serif);
+      font-weight: 400;
+      font-size: 1.65rem;
+      margin-bottom: 1rem;
+    }
+    .institutional p { color: var(--ink-muted); max-width: 60ch; margin-bottom: 1.5rem; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Vaults Capital</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="subscribe.html" class="btn is-active">Subscribe</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow reveal">Subscribe</span>
+        <h1 class="reveal reveal-delay-1">Two ways to read Vaults.</h1>
+        <p class="lede reveal reveal-delay-2">Free weekly. Or full research, model portfolios, and the archive. Both come without ads, sponsorships, or strings.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+
+        <div class="pricing">
+          <div class="tier">
+            <span class="eyebrow">Free</span>
+            <h3>The Vault Weekly</h3>
+            <p class="tier-desc">Markets, frameworks, and theme tracking — every Sunday. The right starting point for individual investors and anyone curious how we think.</p>
+            <p class="price">£0<span class="price-suffix"> / forever</span></p>
+            <ul>
+              <li>Weekly newsletter every Sunday</li>
+              <li>Public research summaries</li>
+              <li>Theme primers and frameworks</li>
+              <li>Open archive of free posts</li>
+              <li data-disabled>Full equity research reports</li>
+              <li data-disabled>Model portfolios</li>
+              <li data-disabled>Quarterly alternatives deep dive</li>
+            </ul>
+            <a href="#" class="btn btn--ghost" onclick="event.preventDefault(); alert('Connect this to Beehiiv / ConvertKit / Substack at launch.');">Subscribe free</a>
+          </div>
+          <div class="tier tier--featured">
+            <span class="eyebrow">Premium · individual</span>
+            <h3>Vaults Research</h3>
+            <p class="tier-desc">Full equity reports with the model and risk map. Three thematic portfolios. The complete archive. For individual investors who want the work, not the summary.</p>
+            <p class="price">£12<span class="price-suffix"> / month</span></p>
+            <ul>
+              <li>Everything in Free</li>
+              <li>Full equity research reports</li>
+              <li>Three thematic model portfolios</li>
+              <li>Quarterly alternatives deep dive</li>
+              <li>Full models and assumptions</li>
+              <li>Direct access to authors</li>
+              <li>Complete back archive</li>
+            </ul>
+            <a href="#" class="btn btn--primary" onclick="event.preventDefault(); alert('Connect this to Stripe / Beehiiv premium / Substack premium at launch.');">Start premium →</a>
+          </div>
+        </div>
+
+        <!-- ============ INSTITUTIONAL ============ -->
+        <div class="institutional">
+          <span class="eyebrow" style="display: block; margin-bottom: 0.85rem;">Institutional</span>
+          <h3>Family offices, funds, and corporate clients.</h3>
+          <p>For institutional readers we offer multi-seat access, white-labelled research, and bespoke commissioned work. Pricing depends on use case and seat count. We are happy to send sample reports under NDA.</p>
+          <a href="contact.html" class="btn">Contact for institutional access →</a>
+        </div>
+
+        <!-- ============ FAQ ============ -->
+        <div class="faq">
+          <div class="section-head" style="text-align: left; margin-bottom: 1rem;">
+            <span class="eyebrow" style="display: block; margin-bottom: 0.5rem;">FAQ</span>
+            <h2 style="font-size: 2rem; margin: 0; max-width: none;">Common questions.</h2>
+          </div>
+
+          <div class="faq-item">
+            <h3>Is this investment advice?</h3>
+            <p>No. Our research is published for general informational and educational purposes. It is not personal investment advice and does not consider your individual circumstances, objectives, or risk tolerance. Vaults Capital is not authorised by the Financial Conduct Authority. You should consult an authorised financial adviser before making investment decisions.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>How often do you publish?</h3>
+            <p>The free weekly ships every Sunday. Premium subscribers receive an additional one to two full research reports per month, plus quarterly portfolio updates and an annual outlook.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I cancel anytime?</h3>
+            <p>Yes. Premium subscriptions can be cancelled at any time and you will retain access through the end of your current billing period. There are no contracts or commitments beyond the month you have paid for.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Do you take corporate-access fees, sponsorships, or referral payments?</h3>
+            <p>No. Our only revenue source is subscriptions. We do not accept corporate access fees, sponsorships, paid placements, or referral payments. If we ever do, we will say so explicitly and prominently.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Do the authors hold positions in securities they cover?</h3>
+            <p>Sometimes. When an author holds a position in a security discussed, this is disclosed at the bottom of the report. We have a written conflict-of-interest policy available on request.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>What if my employer needs to clear research subscriptions?</h3>
+            <p>If you are subscribing through a regulated firm, we are happy to provide compliance documentation, sample reports, and an information memorandum. Contact us using the link above.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I gift a subscription?</h3>
+            <p>Not yet — but it is on the roadmap. If you want to gift Premium to a friend or colleague before that's live, email us and we'll arrange it manually.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand"><span class="brand-mark"></span>Vaults Capital</a>
+          <p style="margin-top: 1rem; font-size: 0.88rem; color: var(--ink-muted); max-width: 32ch; line-height: 1.55;">Independent equity research, thematic portfolios, and alternative-asset analysis for long-horizon investors.</p>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html?filter=equity">Equity</a></li>
+            <li><a href="research.html?filter=thematic">Thematic</a></li>
+            <li><a href="research.html?filter=alternatives">Alternatives</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Firm</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">X / Twitter</a></li>
+            <li><a href="#">RSS feed</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="disclaimer">The information presented on this site is for general informational and educational purposes only. It does not constitute investment advice, a recommendation, or an offer to buy or sell any security. Vaults Capital is not authorised or regulated by the Financial Conduct Authority. Readers should consult an authorised financial adviser before making any investment decisions. Past performance is not indicative of future results.</p>
+        <p class="copyright">© 2026 Vaults Capital</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

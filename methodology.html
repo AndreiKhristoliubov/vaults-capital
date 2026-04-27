@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Methodology — Vaults Capital</title>
+  <meta name="description" content="How we conduct equity research, build thematic portfolios, and analyse alternative investments." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FBFAF6'/%3E%3Crect x='12' y='12' width='8' height='8' fill='%231B3A5F'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .method-section {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+    }
+    .method-section:first-of-type { border-top: none; }
+    .method-section .label {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .method-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .method-section p {
+      color: var(--ink);
+      max-width: 60ch;
+      line-height: 1.75;
+      font-size: 1.05rem;
+      margin-bottom: 1.2rem;
+    }
+    .method-section ul {
+      list-style: none;
+      max-width: 60ch;
+      margin: 1.5rem 0;
+    }
+    .method-section li {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      gap: 1rem;
+      font-size: 1rem;
+      align-items: baseline;
+    }
+    .method-section li:last-child { border-bottom: none; }
+    .method-section li .step-num {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+    .method-section li .step-text { color: var(--ink-muted); line-height: 1.6; }
+    .method-section li .step-text strong { color: var(--ink); display: block; margin-bottom: 0.25rem; font-weight: 500; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Vaults Capital</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="methodology.html" class="is-active">Methodology</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="subscribe.html" class="btn">Subscribe</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow reveal">Methodology</span>
+        <h1 class="reveal reveal-delay-1">How we work.</h1>
+        <p class="lede reveal reveal-delay-2">Research is a craft, not a rating. The process below is what we run for every report we publish — equity, thematic, or alternative.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+
+        <div class="method-section">
+          <span class="label">01 / Equity research</span>
+          <h2>Single-name deep dives.</h2>
+          <p>We cover undercovered businesses where the structural thesis is mispriced. Coverage is initiation-led — we publish a full report when conviction warrants it, not on a fixed schedule, and we follow up only when something material has changed.</p>
+          <ul>
+            <li>
+              <span class="step-num">i.</span>
+              <span class="step-text"><strong>Idea sourcing.</strong> Quantitative screens, industry reading, and conversations with operators. We start the model only after we can articulate a non-consensus view.</span>
+            </li>
+            <li>
+              <span class="step-num">ii.</span>
+              <span class="step-text"><strong>Industry mapping.</strong> Competitive landscape, supply chain, and customer concentration. Where does the business actually compete and what makes it durable?</span>
+            </li>
+            <li>
+              <span class="step-num">iii.</span>
+              <span class="step-text"><strong>Modelling.</strong> Three-statement DCF with explicit driver assumptions. We do not hide the model — every report ships with it.</span>
+            </li>
+            <li>
+              <span class="step-num">iv.</span>
+              <span class="step-text"><strong>Risk map.</strong> The four to six things that would break the thesis, with named monitoring triggers for each.</span>
+            </li>
+            <li>
+              <span class="step-num">v.</span>
+              <span class="step-text"><strong>Bear / base / bull scenarios.</strong> We publish the scenario range, not a single point estimate.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="method-section">
+          <span class="label">02 / Thematic portfolios</span>
+          <h2>Long-horizon allocation, not speculation.</h2>
+          <p>Thematic portfolios are constructed around durable structural shifts — energy transition, defence cycle reset, capital fragmentation. We are explicit about what counts as a theme and what does not: a theme has a multi-year time horizon, identifiable beneficiaries with pricing power, and a falsification condition.</p>
+          <ul>
+            <li>
+              <span class="step-num">i.</span>
+              <span class="step-text"><strong>Theme definition.</strong> A written one-pager describing the structural shift, why it is durable, and what would invalidate it.</span>
+            </li>
+            <li>
+              <span class="step-num">ii.</span>
+              <span class="step-text"><strong>Beneficiary mapping.</strong> Direct and second-order beneficiaries with the strongest competitive positions and pricing power.</span>
+            </li>
+            <li>
+              <span class="step-num">iii.</span>
+              <span class="step-text"><strong>Sizing and risk.</strong> Position sizing reflects conviction, valuation, and concentration limits. Volatility is not the same as risk.</span>
+            </li>
+            <li>
+              <span class="step-num">iv.</span>
+              <span class="step-text"><strong>Rebalancing rules.</strong> Quarterly review with named exit triggers. Themes can fail — we will close them when they do.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="method-section">
+          <span class="label">03 / Alternatives</span>
+          <h2>Beyond public equity.</h2>
+          <p>Alternative coverage focuses on commodities, private markets, and real assets. We approach these the same way as equities — fundamental, long-horizon, and explicit about assumptions — adapted for less efficient pricing and longer cycle times.</p>
+          <ul>
+            <li>
+              <span class="step-num">i.</span>
+              <span class="step-text"><strong>Cycle position.</strong> Where is the asset in its supply / demand / capital cycle? What are the lead times to respond?</span>
+            </li>
+            <li>
+              <span class="step-num">ii.</span>
+              <span class="step-text"><strong>Expression.</strong> Equity, royalty, physical, or derivative — each with different liquidity, leverage, and tail risk profiles. We always show the alternatives.</span>
+            </li>
+            <li>
+              <span class="step-num">iii.</span>
+              <span class="step-text"><strong>Macro overlay.</strong> Rates, currency, and policy assumptions made explicit. Alternative assets are sensitive to macro in ways equities are not.</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container container--narrow">
+        <span class="eyebrow" style="color: rgba(251,250,246,0.6); display: block; margin-bottom: 1rem;">The Vault Weekly</span>
+        <h2>See the methodology in practice.</h2>
+        <p>Subscribe to read our latest research and see how this framework plays out in real coverage.</p>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Connect this form to Beehiiv, ConvertKit, or Substack at launch.');">
+          <input type="email" placeholder="your@email.com" required aria-label="Email address" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand"><span class="brand-mark"></span>Vaults Capital</a>
+          <p style="margin-top: 1rem; font-size: 0.88rem; color: var(--ink-muted); max-width: 32ch; line-height: 1.55;">Independent equity research, thematic portfolios, and alternative-asset analysis for long-horizon investors.</p>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html?filter=equity">Equity</a></li>
+            <li><a href="research.html?filter=thematic">Thematic</a></li>
+            <li><a href="research.html?filter=alternatives">Alternatives</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Firm</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">X / Twitter</a></li>
+            <li><a href="#">RSS feed</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="disclaimer">The information presented on this site is for general informational and educational purposes only. It does not constitute investment advice, a recommendation, or an offer to buy or sell any security. Vaults Capital is not authorised or regulated by the Financial Conduct Authority. Readers should consult an authorised financial adviser before making any investment decisions. Past performance is not indicative of future results.</p>
+        <p class="copyright">© 2026 Vaults Capital</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

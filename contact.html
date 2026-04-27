@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Vaults Capital</title>
+  <meta name="description" content="Get in touch with Vaults Capital. Editorial, institutional, and media inquiries." />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FBFAF6'/%3E%3Crect x='12' y='12' width='8' height='8' fill='%231B3A5F'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .contact-form label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-muted);
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem 0.85rem;
+      border: 1px solid var(--border-strong);
+      background: var(--bg-elevated);
+      color: var(--ink);
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: border-color 200ms var(--ease);
+    }
+    .contact-form input:focus,
+    .contact-form select:focus,
+    .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .contact-form textarea { min-height: 140px; resize: vertical; }
+    .contact-form .field { margin-bottom: 0.5rem; }
+    .contact-form button { align-self: flex-start; margin-top: 0.5rem; }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Vaults Capital</a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="methodology.html">Methodology</a></li>
+          <li><a href="contact.html" class="is-active">Contact</a></li>
+          <li><a href="subscribe.html" class="btn">Subscribe</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow reveal">Contact</span>
+        <h1 class="reveal reveal-delay-1">Talk to us.</h1>
+        <p class="lede reveal reveal-delay-2">Institutional inquiries, media, partnerships, or just a thoughtful disagreement with something we wrote — we read every message.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container container--narrow">
+        <div class="contact-grid">
+          <div>
+            <div class="contact-block" style="margin-bottom: 2.5rem;">
+              <h3>General</h3>
+              <p><a href="mailto:hello@vaultscapital.com">hello@vaultscapital.com</a></p>
+            </div>
+            <div class="contact-block" style="margin-bottom: 2.5rem;">
+              <h3>Institutional access</h3>
+              <p><a href="mailto:institutional@vaultscapital.com">institutional@vaultscapital.com</a></p>
+              <p style="font-size: 0.9rem; color: var(--ink-muted); margin-top: 0.5rem; line-height: 1.55;">For multi-seat licences, white-labelled research, and commissioned work.</p>
+            </div>
+            <div class="contact-block" style="margin-bottom: 2.5rem;">
+              <h3>Media</h3>
+              <p><a href="mailto:press@vaultscapital.com">press@vaultscapital.com</a></p>
+            </div>
+            <div class="contact-block">
+              <h3>Where to find us</h3>
+              <p style="font-size: 0.95rem;"><a href="#">LinkedIn</a> · <a href="#">X / Twitter</a> · <a href="#">RSS feed</a></p>
+            </div>
+          </div>
+          <div>
+            <h3 style="font-family: var(--font-serif); font-weight: 400; font-size: 1.65rem; margin-bottom: 1.5rem;">Send us a message</h3>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Hook this up to Formspree, Getform, Netlify Forms, or your own backend at launch.');">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="field">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                  <option>General inquiry</option>
+                  <option>Institutional access</option>
+                  <option>Media / press</option>
+                  <option>Partnership</option>
+                  <option>Feedback on a report</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">Send message →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="brand"><span class="brand-mark"></span>Vaults Capital</a>
+          <p style="margin-top: 1rem; font-size: 0.88rem; color: var(--ink-muted); max-width: 32ch; line-height: 1.55;">Independent equity research, thematic portfolios, and alternative-asset analysis for long-horizon investors.</p>
+        </div>
+        <div>
+          <h4>Research</h4>
+          <ul>
+            <li><a href="research.html?filter=equity">Equity</a></li>
+            <li><a href="research.html?filter=thematic">Thematic</a></li>
+            <li><a href="research.html?filter=alternatives">Alternatives</a></li>
+            <li><a href="methodology.html">Methodology</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Firm</h4>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">X / Twitter</a></li>
+            <li><a href="#">RSS feed</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="disclaimer">The information presented on this site is for general informational and educational purposes only. It does not constitute investment advice, a recommendation, or an offer to buy or sell any security. Vaults Capital is not authorised or regulated by the Financial Conduct Authority. Readers should consult an authorised financial adviser before making any investment decisions. Past performance is not indicative of future results.</p>
+        <p class="copyright">© 2026 Vaults Capital</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
